@@ -10,28 +10,21 @@ import UIKit
 
 class ProsViewController: UITableViewController {
     
+    var proStore: ProStore!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        readJsonFile()
-        
-        
-        
     }
     
-    func readJsonFile() {
-        do {
-            if let file = Bundle.main.url(forResource: "pro_data", withExtension: "json") {
-                let data = try Data(contentsOf: file, options: [])
-                
-                let pros: [Pro] = try JSONDecoder().decode([Pro].self, from: data)
-                pros.forEach { print($0.companyName) }
-            } else {
-                print("No file at that location")
-            }
-        } catch {
-            print(error.localizedDescription)
-        }
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return proStore.pros.count
     }
     
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "UITableViewCell")
+        let pro = proStore.pros[indexPath.row]
+        cell.textLabel?.text = pro.companyName
+        cell.detailTextLabel?.text = "Ratings: \(pro.compositeRating) | \(pro.ratingCount) rating(s)"
+        return cell
+    }
 }

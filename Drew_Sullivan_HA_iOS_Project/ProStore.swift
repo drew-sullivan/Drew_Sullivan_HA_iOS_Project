@@ -6,4 +6,25 @@
 //  Copyright © 2018 Drew Sullivan. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class ProStore {
+    var pros = [Pro]()
+    
+    init() {
+        readJsonFile()
+    }
+    
+    func readJsonFile() {
+        do {
+            if let file = Bundle.main.url(forResource: "pro_data", withExtension: "json") {
+                let data = try Data(contentsOf: file, options: [])
+                pros = try JSONDecoder().decode([Pro].self, from: data)
+            } else {
+                print("No file at that location")
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+}
