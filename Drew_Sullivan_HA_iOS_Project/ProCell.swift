@@ -12,5 +12,4 @@ class ProCell: UITableViewCell {
     
     @IBOutlet var proNameLabel: UILabel!
     @IBOutlet var ratingInfoLabel: UILabel!
-    
 }

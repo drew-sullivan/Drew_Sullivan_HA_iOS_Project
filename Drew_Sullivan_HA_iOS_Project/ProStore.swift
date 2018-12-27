@@ -12,11 +12,11 @@ class ProStore {
     var pros = [Pro]()
     
     init() {
-        readJsonFile()
+        parseJSONtoPros()
         pros = pros.sorted { $0.companyName < $1.companyName }
     }
     
-    func readJsonFile() {
+    func parseJSONtoPros() {
         do {
             if let file = Bundle.main.url(forResource: "pro_data", withExtension: "json") {
                 let data = try Data(contentsOf: file, options: [])
