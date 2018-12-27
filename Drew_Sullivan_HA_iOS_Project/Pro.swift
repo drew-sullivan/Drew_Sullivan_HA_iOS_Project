@@ -23,34 +23,34 @@ struct Pro: Codable {
     var specialty: String
     var primaryLocation: String
     var email: String
-    init(entityId: String,
-         companyName: String,
-         ratingCount: String,
-         compositeRating: String,
-         companyOverview: String,
-         canadianSP: Bool,
-         spanishSpeaking: Bool,
-         phoneNumber: String,
-         latitude: Double,
-         longitude: Double,
-         servicesOffered: String,
-         specialty: String,
-         primaryLocation: String,
-         email: String) {
-        self.entityId = entityId
-        self.companyName = companyName
-        self.ratingCount = ratingCount
-        self.compositeRating = compositeRating
-        self.companyOverview = companyOverview
-        self.canadianSP = canadianSP
-        self.spanishSpeaking = spanishSpeaking
-        self.phoneNumber = phoneNumber
-        self.latitude = latitude
-        self.longitude = longitude
-        self.servicesOffered = servicesOffered
-        self.specialty = specialty
-        self.primaryLocation = primaryLocation
-        self.email = email
-    }
+//    init(entityId: String,
+//         companyName: String,
+//         ratingCount: String,
+//         compositeRating: String,
+//         companyOverview: String,
+//         canadianSP: Bool,
+//         spanishSpeaking: Bool,
+//         phoneNumber: String,
+//         latitude: Double,
+//         longitude: Double,
+//         servicesOffered: String,
+//         specialty: String,
+//         primaryLocation: String,
+//         email: String) {
+//        self.entityId = entityId
+//        self.companyName = companyName
+//        self.ratingCount = Int(ratingCount)!
+//        self.compositeRating = Double(compositeRating)!
+//        self.companyOverview = companyOverview
+//        self.canadianSP = canadianSP
+//        self.spanishSpeaking = spanishSpeaking
+//        self.phoneNumber = phoneNumber
+//        self.latitude = latitude
+//        self.longitude = longitude
+//        self.servicesOffered = servicesOffered
+//        self.specialty = specialty
+//        self.primaryLocation = primaryLocation
+//        self.email = email
+//    }
     
 }

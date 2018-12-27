@@ -12,10 +12,12 @@ class ProsViewController: UITableViewController {
     
     var proStore: ProStore!
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    // MARK: - TableView
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return proStore.pros.count
     }
@@ -31,8 +33,26 @@ class ProsViewController: UITableViewController {
         } else {
             ratingInfo = "References Available"
         }
+                
         cell.ratingInfoLabel.text = ratingInfo
         
+        if let rating = Double(pro.compositeRating), rating > 0 {
+            cell.ratingInfoLabel.textColor = getRatingInfoColor(rating: rating)
+        } else {
+            cell.ratingInfoLabel.textColor = UIColor.black
+        }
+        
         return cell
+    }
+    
+    // MARK: - Helpers
+    private func getRatingInfoColor(rating num: Double) -> UIColor {
+        if num >= 4.0 {
+            return UIColor.green
+        } else if num >= 3.0 {
+            return UIColor.orange
+        } else {
+            return UIColor.red
+        }
     }
 }

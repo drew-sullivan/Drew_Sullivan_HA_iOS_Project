@@ -13,6 +13,7 @@ class ProStore {
     
     init() {
         readJsonFile()
+        pros = pros.sorted { $0.companyName < $1.companyName }
     }
     
     func readJsonFile() {
