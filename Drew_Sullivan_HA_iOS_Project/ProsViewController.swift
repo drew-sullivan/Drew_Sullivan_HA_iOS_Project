@@ -24,7 +24,15 @@ class ProsViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProCell", for: indexPath) as! ProCell
         let pro = proStore.pros[indexPath.row]
         cell.proNameLabel.text = pro.companyName
-        cell.ratingInfoLabel.text = "Ratings: \(pro.compositeRating) | \(pro.ratingCount) rating(s)"
+        
+        var ratingInfo: String
+        if let ratingCount = Int(pro.ratingCount), ratingCount > 0 {
+            ratingInfo = "Ratings: \(pro.compositeRating) | \(ratingCount) rating(s)"
+        } else {
+            ratingInfo = "References Available"
+        }
+        cell.ratingInfoLabel.text = ratingInfo
+        
         return cell
     }
 }
