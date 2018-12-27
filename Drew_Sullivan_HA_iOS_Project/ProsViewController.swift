@@ -21,10 +21,10 @@ class ProsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "UITableViewCell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ProCell", for: indexPath) as! ProCell
         let pro = proStore.pros[indexPath.row]
-        cell.textLabel?.text = pro.companyName
-        cell.detailTextLabel?.text = "Ratings: \(pro.compositeRating) | \(pro.ratingCount) rating(s)"
+        cell.proNameLabel.text = pro.companyName
+        cell.ratingInfoLabel.text = "Ratings: \(pro.compositeRating) | \(pro.ratingCount) rating(s)"
         return cell
     }
 }
