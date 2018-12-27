@@ -8,25 +8,25 @@
 
 import Foundation
 
-struct Pro: Decodable {
+struct Pro: Codable {
     var entityId: String
     var companyName: String
-    var ratingsCount: Int
-    var compositeRating: Double
+    var ratingCount: String
+    var compositeRating: String
     var companyOverview: String
     var canadianSP: Bool
     var spanishSpeaking: Bool
     var phoneNumber: String
-    var latitude: Double
-    var longitude: Double
-    var servicesOffered: String
+    var latitude: Double?
+    var longitude: Double?
+    var servicesOffered: String?
     var specialty: String
     var primaryLocation: String
     var email: String
     init(entityId: String,
          companyName: String,
-         ratingsCount: Int,
-         compositeRating: Double,
+         ratingCount: String,
+         compositeRating: String,
          companyOverview: String,
          canadianSP: Bool,
          spanishSpeaking: Bool,
@@ -39,7 +39,7 @@ struct Pro: Decodable {
          email: String) {
         self.entityId = entityId
         self.companyName = companyName
-        self.ratingsCount = ratingsCount
+        self.ratingCount = ratingCount
         self.compositeRating = compositeRating
         self.companyOverview = companyOverview
         self.canadianSP = canadianSP

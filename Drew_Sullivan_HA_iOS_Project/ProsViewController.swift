@@ -13,18 +13,25 @@ class ProsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        readJsonFile()
+        
+        
+        
+    }
+    
+    func readJsonFile() {
         do {
             if let file = Bundle.main.url(forResource: "pro_data", withExtension: "json") {
-                let data = try Data(contentsOf: file)
-                let json = try JSONSerialization.jsonObject(with: data, options: [])
-                print(json)
+                let data = try Data(contentsOf: file, options: [])
+                
+                let pros: [Pro] = try JSONDecoder().decode([Pro].self, from: data)
+                pros.forEach { print($0.companyName) }
+            } else {
+                print("No file at that location")
             }
         } catch {
-            
+            print(error.localizedDescription)
         }
-        
-        
-        
     }
     
 }
