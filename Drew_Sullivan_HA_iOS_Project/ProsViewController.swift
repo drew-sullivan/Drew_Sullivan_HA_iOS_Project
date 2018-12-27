@@ -48,6 +48,20 @@ class ProsViewController: UITableViewController {
         return cell
     }
     
+    // MARK: - Segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "showProDetails":
+            if let row = tableView.indexPathForSelectedRow?.row {
+                let pro = proStore.pros[row]
+                let proDetailsViewController = segue.destination as! ProDetailsViewController
+                proDetailsViewController.pro = pro
+            }
+        default:
+            preconditionFailure("Unexpected segue identifier")
+        }
+    }
+    
     // MARK: - Helpers
     private func getRatingInfoColor(rating num: Double) -> UIColor {
         if num >= 4.0 {

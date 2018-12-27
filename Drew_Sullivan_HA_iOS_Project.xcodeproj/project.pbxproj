@@ -17,6 +17,7 @@
 		3A5650A221D51E3A00B764D3 /* Pro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5650A121D51E3A00B764D3 /* Pro.swift */; };
 		3A5650A421D5324900B764D3 /* ProStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5650A321D5324900B764D3 /* ProStore.swift */; };
 		3A5650A621D540C700B764D3 /* ProCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5650A521D540C700B764D3 /* ProCell.swift */; };
+		3A5650A821D56C4900B764D3 /* ProDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5650A721D56C4900B764D3 /* ProDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		3A5650A121D51E3A00B764D3 /* Pro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro.swift; sourceTree = "<group>"; };
 		3A5650A321D5324900B764D3 /* ProStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProStore.swift; sourceTree = "<group>"; };
 		3A5650A521D540C700B764D3 /* ProCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProCell.swift; sourceTree = "<group>"; };
+		3A5650A721D56C4900B764D3 /* ProDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			children = (
 				3A56507621D517D300B764D3 /* AppDelegate.swift */,
 				3A56507A21D517D300B764D3 /* Main.storyboard */,
+				3A5650A721D56C4900B764D3 /* ProDetailsViewController.swift */,
 				3A56509D21D51D9300B764D3 /* ProsViewController.swift */,
 				3A5650A521D540C700B764D3 /* ProCell.swift */,
 				3A56507D21D517D400B764D3 /* Assets.xcassets */,
@@ -211,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A5650A221D51E3A00B764D3 /* Pro.swift in Sources */,
+				3A5650A821D56C4900B764D3 /* ProDetailsViewController.swift in Sources */,
 				3A56509E21D51D9300B764D3 /* ProsViewController.swift in Sources */,
 				3A56507721D517D300B764D3 /* AppDelegate.swift in Sources */,
 				3A5650A421D5324900B764D3 /* ProStore.swift in Sources */,
