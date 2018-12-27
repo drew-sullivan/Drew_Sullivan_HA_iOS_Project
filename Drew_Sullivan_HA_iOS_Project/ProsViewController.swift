@@ -10,4 +10,21 @@ import UIKit
 
 class ProsViewController: UITableViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        do {
+            if let file = Bundle.main.url(forResource: "pro_data", withExtension: "json") {
+                let data = try Data(contentsOf: file)
+                let json = try JSONSerialization.jsonObject(with: data, options: [])
+                print(json)
+            }
+        } catch {
+            
+        }
+        
+        
+        
+    }
+    
 }

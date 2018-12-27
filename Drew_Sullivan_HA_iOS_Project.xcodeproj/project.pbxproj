@@ -13,6 +13,8 @@
 		3A56508121D517D400B764D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A56507F21D517D400B764D3 /* LaunchScreen.storyboard */; };
 		3A56508C21D517D400B764D3 /* Drew_Sullivan_HA_iOS_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56508B21D517D400B764D3 /* Drew_Sullivan_HA_iOS_ProjectTests.swift */; };
 		3A56509E21D51D9300B764D3 /* ProsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56509D21D51D9300B764D3 /* ProsViewController.swift */; };
+		3A5650A021D51DF500B764D3 /* pro_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A56509F21D51DF400B764D3 /* pro_data.json */; };
+		3A5650A221D51E3A00B764D3 /* Pro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5650A121D51E3A00B764D3 /* Pro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		3A56508B21D517D400B764D3 /* Drew_Sullivan_HA_iOS_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drew_Sullivan_HA_iOS_ProjectTests.swift; sourceTree = "<group>"; };
 		3A56508D21D517D400B764D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A56509D21D51D9300B764D3 /* ProsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProsViewController.swift; sourceTree = "<group>"; };
+		3A56509F21D51DF400B764D3 /* pro_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pro_data.json; sourceTree = "<group>"; };
+		3A5650A121D51E3A00B764D3 /* Pro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				3A56507D21D517D400B764D3 /* Assets.xcassets */,
 				3A56507F21D517D400B764D3 /* LaunchScreen.storyboard */,
 				3A56508221D517D400B764D3 /* Info.plist */,
+				3A56509F21D51DF400B764D3 /* pro_data.json */,
+				3A5650A121D51E3A00B764D3 /* Pro.swift */,
 			);
 			path = Drew_Sullivan_HA_iOS_Project;
 			sourceTree = "<group>";
@@ -180,6 +186,7 @@
 				3A56508121D517D400B764D3 /* LaunchScreen.storyboard in Resources */,
 				3A56507E21D517D400B764D3 /* Assets.xcassets in Resources */,
 				3A56507C21D517D300B764D3 /* Main.storyboard in Resources */,
+				3A5650A021D51DF500B764D3 /* pro_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A5650A221D51E3A00B764D3 /* Pro.swift in Sources */,
 				3A56509E21D51D9300B764D3 /* ProsViewController.swift in Sources */,
 				3A56507721D517D300B764D3 /* AppDelegate.swift in Sources */,
 			);
