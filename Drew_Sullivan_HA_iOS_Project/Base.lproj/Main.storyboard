@@ -75,9 +75,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Q38-2e-bTa">
-                                <rect key="frame" x="0.0" y="64" width="375" height="508"/>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pro Name" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a64-PI-vMZ">
+                                <rect key="frame" x="15" y="84" width="345" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Specialty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofW-XJ-FqG">
+                                <rect key="frame" x="15" y="118" width="345" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJL-Y1-nYX">
+                                <rect key="frame" x="15" y="149.5" width="345" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSy-ay-7fj">
+                                <rect key="frame" x="15" y="199" width="345" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Services" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOO-qS-ftf">
+                                <rect key="frame" x="15" y="228.5" width="345" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3UZ-pp-0QL">
                                 <rect key="frame" x="15" y="602" width="345" height="50"/>
                                 <subviews>
@@ -91,6 +118,9 @@
                                         <state key="normal" title="CALL">
                                             <color key="titleColor" red="1" green="1" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="callButtonTapped:" destination="wmy-So-cef" eventType="touchUpInside" id="W6c-LX-d3Y"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3N-FB-NE0">
                                         <rect key="frame" x="180" y="0.0" width="165" height="50"/>
@@ -103,26 +133,61 @@
                                         <state key="normal" title="EMAIL">
                                             <color key="titleColor" red="1" green="1" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="emailButtonTapped:" destination="wmy-So-cef" eventType="touchUpInside" id="EQD-5x-Qkw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qqx-JE-yx3">
+                                <rect key="frame" x="15" y="278" width="345" height="294"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3UZ-pp-0QL" firstAttribute="leading" secondItem="OVZ-OF-LzK" secondAttribute="leading" constant="15" id="0lO-0F-BQt"/>
-                            <constraint firstItem="3UZ-pp-0QL" firstAttribute="top" secondItem="Q38-2e-bTa" secondAttribute="bottom" constant="30" id="4Oo-CW-cHN"/>
-                            <constraint firstItem="Q38-2e-bTa" firstAttribute="trailing" secondItem="OVZ-OF-LzK" secondAttribute="trailing" id="Skg-oo-bjm"/>
+                            <constraint firstItem="OVZ-OF-LzK" firstAttribute="trailing" secondItem="ofW-XJ-FqG" secondAttribute="trailing" constant="15" id="Ayg-2j-xqy"/>
+                            <constraint firstItem="sJL-Y1-nYX" firstAttribute="top" secondItem="ofW-XJ-FqG" secondAttribute="bottom" constant="10" id="CAx-Jc-EdE"/>
+                            <constraint firstItem="OVZ-OF-LzK" firstAttribute="trailing" secondItem="dOO-qS-ftf" secondAttribute="trailing" constant="15" id="Gqa-YT-8e8"/>
+                            <constraint firstItem="a64-PI-vMZ" firstAttribute="leading" secondItem="OVZ-OF-LzK" secondAttribute="leading" constant="15" id="HwM-Fj-qra"/>
+                            <constraint firstItem="OVZ-OF-LzK" firstAttribute="trailing" secondItem="BSy-ay-7fj" secondAttribute="trailing" constant="15" id="Ikg-rD-eno"/>
+                            <constraint firstItem="BSy-ay-7fj" firstAttribute="leading" secondItem="OVZ-OF-LzK" secondAttribute="leading" constant="15" id="N4I-ss-QHu"/>
+                            <constraint firstItem="dOO-qS-ftf" firstAttribute="top" secondItem="BSy-ay-7fj" secondAttribute="bottom" constant="10" id="PZk-ik-LBi"/>
+                            <constraint firstItem="OVZ-OF-LzK" firstAttribute="trailing" secondItem="sJL-Y1-nYX" secondAttribute="trailing" constant="15" id="SZs-t1-x9w"/>
+                            <constraint firstItem="3UZ-pp-0QL" firstAttribute="top" secondItem="Qqx-JE-yx3" secondAttribute="bottom" constant="30" id="V4z-QV-nUB"/>
+                            <constraint firstItem="ofW-XJ-FqG" firstAttribute="top" secondItem="a64-PI-vMZ" secondAttribute="bottom" constant="10" id="WS3-yw-QXd"/>
+                            <constraint firstItem="BSy-ay-7fj" firstAttribute="top" secondItem="sJL-Y1-nYX" secondAttribute="bottom" constant="30" id="X8H-eu-Jl0"/>
+                            <constraint firstItem="a64-PI-vMZ" firstAttribute="top" secondItem="OVZ-OF-LzK" secondAttribute="top" constant="20" id="Ysx-BF-lZi"/>
+                            <constraint firstItem="sJL-Y1-nYX" firstAttribute="leading" secondItem="OVZ-OF-LzK" secondAttribute="leading" constant="15" id="a5K-Dd-nWi"/>
+                            <constraint firstItem="ofW-XJ-FqG" firstAttribute="leading" secondItem="OVZ-OF-LzK" secondAttribute="leading" constant="15" id="aoV-Ia-aN4"/>
                             <constraint firstItem="OVZ-OF-LzK" firstAttribute="trailing" secondItem="3UZ-pp-0QL" secondAttribute="trailing" constant="15" id="bp0-fU-7p1"/>
                             <constraint firstItem="OVZ-OF-LzK" firstAttribute="bottom" secondItem="3UZ-pp-0QL" secondAttribute="bottom" constant="15" id="cKd-jS-PM7"/>
-                            <constraint firstItem="Q38-2e-bTa" firstAttribute="top" secondItem="OVZ-OF-LzK" secondAttribute="top" id="yVU-cA-Chj"/>
-                            <constraint firstItem="Q38-2e-bTa" firstAttribute="leading" secondItem="OVZ-OF-LzK" secondAttribute="leading" id="z8K-33-jy9"/>
+                            <constraint firstItem="dOO-qS-ftf" firstAttribute="leading" secondItem="OVZ-OF-LzK" secondAttribute="leading" constant="15" id="kpo-Dp-Bmo"/>
+                            <constraint firstItem="Qqx-JE-yx3" firstAttribute="top" secondItem="dOO-qS-ftf" secondAttribute="bottom" constant="30" id="mtG-1s-JZQ"/>
+                            <constraint firstItem="OVZ-OF-LzK" firstAttribute="trailing" secondItem="Qqx-JE-yx3" secondAttribute="trailing" constant="15" id="vN6-gE-uYk"/>
+                            <constraint firstItem="Qqx-JE-yx3" firstAttribute="leading" secondItem="OVZ-OF-LzK" secondAttribute="leading" constant="15" id="vZE-7b-46h"/>
+                            <constraint firstItem="OVZ-OF-LzK" firstAttribute="trailing" secondItem="a64-PI-vMZ" secondAttribute="trailing" constant="15" id="ymF-Hg-SPc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OVZ-OF-LzK"/>
                     </view>
+                    <connections>
+                        <outlet property="callButton" destination="bH7-9L-zar" id="0dR-S3-QUu"/>
+                        <outlet property="emailButton" destination="R3N-FB-NE0" id="umk-Z8-DE5"/>
+                        <outlet property="locationLabel" destination="BSy-ay-7fj" id="fEe-Tv-fiL"/>
+                        <outlet property="overviewTextView" destination="Qqx-JE-yx3" id="cE0-lq-dgx"/>
+                        <outlet property="proNameLabel" destination="a64-PI-vMZ" id="oPN-a9-g9F"/>
+                        <outlet property="ratingInformationLabel" destination="sJL-Y1-nYX" id="g3f-fG-qhe"/>
+                        <outlet property="servicesLabel" destination="dOO-qS-ftf" id="EpG-Yl-wme"/>
+                        <outlet property="specialtyLabel" destination="ofW-XJ-FqG" id="Upi-bi-4JQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mhb-6c-MM6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1667" y="-9"/>
+            <point key="canvasLocation" x="1666.4000000000001" y="-9.4452773613193415"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DUo-7f-SX6">
