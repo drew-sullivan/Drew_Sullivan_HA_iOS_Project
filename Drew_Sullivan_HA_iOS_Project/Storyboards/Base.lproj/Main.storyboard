@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProCell" rowHeight="65" id="LHu-gG-Foc" customClass="ProCell" customModule="Drew_Sullivan_HA_iOS_Project" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProTableViewCell" rowHeight="65" id="LHu-gG-Foc" customClass="ProTableViewCell" customModule="Drew_Sullivan_HA_iOS_Project" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LHu-gG-Foc" id="bNV-0Y-Cvz" customClass="ProCell">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LHu-gG-Foc" id="bNV-0Y-Cvz">
                                     <rect key="frame" x="0.0" y="0.0" width="341" height="64.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -50,8 +50,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="proNameLabel" destination="m8i-Lj-5kl" id="6bo-Mh-6Vv"/>
-                                    <outlet property="ratingInfoLabel" destination="kqx-Tl-Len" id="1s8-7n-g2D"/>
+                                    <outlet property="proNameLabel" destination="m8i-Lj-5kl" id="v3j-3x-JQc"/>
+                                    <outlet property="ratingInfoLabel" destination="kqx-Tl-Len" id="mCE-Jq-72v"/>
                                     <segue destination="wmy-So-cef" kind="show" identifier="showProDetails" id="SjZ-Lb-m1I"/>
                                 </connections>
                             </tableViewCell>

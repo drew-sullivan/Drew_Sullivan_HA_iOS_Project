@@ -26,7 +26,7 @@ class ProsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ProCell", for: indexPath) as! ProCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ProTableViewCell", for: indexPath) as! ProTableViewCell
         let pro = proStore.pros[indexPath.row]
         cell.proNameLabel.text = pro.companyName
         cell.ratingInfoLabel.text = pro.ratingInformation
