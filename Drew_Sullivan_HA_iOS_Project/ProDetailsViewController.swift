@@ -27,9 +27,9 @@ class ProDetailsViewController: UIViewController {
         
         proNameLabel.text = pro.companyName
         specialtyLabel.text = pro.specialty
-        ratingInformationLabel.text = "dummy"
+        ratingInformationLabel.text = pro.ratingInformation
         locationLabel.text = pro.primaryLocation
-        servicesLabel.text = pro.servicesOffered
+        servicesLabel.text = pro.serviceInformation
         overviewTextView.text = pro.companyOverview
     }
     

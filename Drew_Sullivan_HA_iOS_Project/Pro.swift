@@ -23,4 +23,20 @@ struct Pro: Decodable {
     var specialty: String
     var primaryLocation: String
     var email: String
+    
+    var ratingInformation: String {
+        if let numRatings = Int(ratingCount), numRatings > 0 {
+            return "Ratings: \(compositeRating) | \(numRatings) rating(s)"
+        } else {
+            return "References Available"
+        }
+    }
+    
+    var serviceInformation: String {
+        if let services = servicesOffered {
+            return services
+        } else {
+            return "Services Not Available"
+        }
+    }
 }
