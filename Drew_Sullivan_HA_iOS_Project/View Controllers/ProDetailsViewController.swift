@@ -40,6 +40,4 @@ class ProDetailsViewController: UIViewController {
     @IBAction func emailButtonTapped(_ sender: UIButton) {
         print("email = \(pro.email)")
     }
-    
-    
 }
