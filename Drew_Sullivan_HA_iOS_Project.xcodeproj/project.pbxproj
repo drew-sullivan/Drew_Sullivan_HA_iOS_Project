@@ -87,17 +87,14 @@
 		3A56507521D517D300B764D3 /* Drew_Sullivan_HA_iOS_Project */ = {
 			isa = PBXGroup;
 			children = (
+				3A78B64721D5BD11006749E7 /* Storyboards */,
+				3A78B64621D5BCDD006749E7 /* Data Management */,
+				3A78B64421D5BC80006749E7 /* View Controllers */,
+				3A78B64321D5BC6D006749E7 /* Models */,
 				3A56507621D517D300B764D3 /* AppDelegate.swift */,
-				3A56507A21D517D300B764D3 /* Main.storyboard */,
-				3A5650A721D56C4900B764D3 /* ProDetailsViewController.swift */,
-				3A56509D21D51D9300B764D3 /* ProsViewController.swift */,
-				3A5650A521D540C700B764D3 /* ProCell.swift */,
 				3A56507D21D517D400B764D3 /* Assets.xcassets */,
-				3A56507F21D517D400B764D3 /* LaunchScreen.storyboard */,
 				3A56508221D517D400B764D3 /* Info.plist */,
 				3A56509F21D51DF400B764D3 /* pro_data.json */,
-				3A5650A121D51E3A00B764D3 /* Pro.swift */,
-				3A5650A321D5324900B764D3 /* ProStore.swift */,
 			);
 			path = Drew_Sullivan_HA_iOS_Project;
 			sourceTree = "<group>";
@@ -109,6 +106,49 @@
 				3A56508D21D517D400B764D3 /* Info.plist */,
 			);
 			path = Drew_Sullivan_HA_iOS_ProjectTests;
+			sourceTree = "<group>";
+		};
+		3A78B64321D5BC6D006749E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A5650A121D51E3A00B764D3 /* Pro.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3A78B64421D5BC80006749E7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A78B64521D5BC93006749E7 /* Cells */,
+				3A5650A721D56C4900B764D3 /* ProDetailsViewController.swift */,
+				3A56509D21D51D9300B764D3 /* ProsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3A78B64521D5BC93006749E7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3A5650A521D540C700B764D3 /* ProCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3A78B64621D5BCDD006749E7 /* Data Management */ = {
+			isa = PBXGroup;
+			children = (
+				3A5650A321D5324900B764D3 /* ProStore.swift */,
+			);
+			path = "Data Management";
+			sourceTree = "<group>";
+		};
+		3A78B64721D5BD11006749E7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3A56507F21D517D400B764D3 /* LaunchScreen.storyboard */,
+				3A56507A21D517D300B764D3 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
