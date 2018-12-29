@@ -28,14 +28,10 @@ class ProsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProTableViewCell", for: indexPath) as! ProTableViewCell
         let pro = proStore.pros[indexPath.row]
+        
         cell.proNameLabel.text = pro.companyName
         cell.ratingInfoLabel.text = pro.ratingInformation
-        
-        if let rating = Double(pro.compositeRating), rating > 0 {
-            cell.ratingInfoLabel.textColor = getRatingInfoColor(rating: rating)
-        } else {
-            cell.ratingInfoLabel.textColor = UIColor.black
-        }
+        cell.ratingInfoLabel.textColor = pro.ratingInfoColor
         
         return cell
     }
@@ -54,14 +50,4 @@ class ProsViewController: UITableViewController {
         }
     }
     
-    // MARK: - Helpers
-    private func getRatingInfoColor(rating num: Double) -> UIColor {
-        if num >= 4.0 {
-            return UIColor.green
-        } else if num >= 3.0 {
-            return UIColor.orange
-        } else {
-            return UIColor.red
-        }
-    }
 }
