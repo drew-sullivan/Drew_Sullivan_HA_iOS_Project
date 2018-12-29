@@ -39,6 +39,17 @@ class Drew_Sullivan_HA_iOS_ProjectTests: XCTestCase {
             XCTAssert(pro.ratingInformation == "Ratings: 3.5 | 3 rating(s)")
         }
     }
+    
+    func testServiceInformationSetCorrectly() {
+        if var pro = pro {
+            pro.servicesOffered = nil
+            XCTAssert(pro.serviceInformation == "Services Not Available", "Pro's services offered is nil and should read 'Services Not Available'")
+            
+            let populatedService = "Any service"
+            pro.servicesOffered = populatedService
+            XCTAssert(pro.serviceInformation == populatedService)
+        }
+    }
 
     func testRatingInfoColorSetProperly() {
         if var pro = pro {
@@ -61,17 +72,6 @@ class Drew_Sullivan_HA_iOS_ProjectTests: XCTestCase {
             let ratingNotANumber = "Not a number"
             pro.compositeRating = ratingNotANumber
             XCTAssert(pro.ratingInfoColor == UIColor.black, "Color should be black")
-        }
-    }
-    
-    func testServiceInformationContainsAppropriateInformation() {
-        if var pro = pro {
-            pro.servicesOffered = nil
-            XCTAssert(pro.serviceInformation == "Services Not Available", "Pro's services offered is nil and should read 'Services Not Available'")
-            
-            let populatedService = "Any service"
-            pro.servicesOffered = populatedService
-            XCTAssert(pro.serviceInformation == populatedService)
         }
     }
 
