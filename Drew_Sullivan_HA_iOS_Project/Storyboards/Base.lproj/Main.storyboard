@@ -52,7 +52,7 @@
                                 <connections>
                                     <outlet property="proNameLabel" destination="m8i-Lj-5kl" id="v3j-3x-JQc"/>
                                     <outlet property="ratingInfoLabel" destination="kqx-Tl-Len" id="mCE-Jq-72v"/>
-                                    <segue destination="wmy-So-cef" kind="show" identifier="showProDetails" id="SjZ-Lb-m1I"/>
+                                    <segue destination="wmy-So-cef" kind="show" identifier="proDetailsSegue" id="SjZ-Lb-m1I"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

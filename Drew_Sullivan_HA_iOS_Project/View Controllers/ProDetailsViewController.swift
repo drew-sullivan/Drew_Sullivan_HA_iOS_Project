@@ -24,7 +24,7 @@ class ProDetailsViewController: UIViewController {
     // MARK: - Life Cycle
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+
         proNameLabel.text = pro.companyName
         specialtyLabel.text = pro.specialty
         ratingInformationLabel.text = pro.ratingInformation

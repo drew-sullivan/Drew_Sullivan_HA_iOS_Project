@@ -39,14 +39,14 @@ class ProsTableViewController: UITableViewController {
     // MARK: - Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
-        case "showProDetails":
+        case "proDetailsSegue":
             if let row = tableView.indexPathForSelectedRow?.row {
                 let pro = proStore.pros[row]
                 let proDetailsViewController = segue.destination as! ProDetailsViewController
                 proDetailsViewController.pro = pro
             }
         default:
-            preconditionFailure("Unexpected segue identifier")
+            return
         }
     }
     

@@ -6,6 +6,7 @@
 //  Copyright © 2018 Drew Sullivan. All rights reserved.
 //
 
+import Foundation
 import XCTest
 
 @testable import Drew_Sullivan_HA_iOS_Project
@@ -39,7 +40,14 @@ class ProsTableViewControllerTests: XCTestCase {
         XCTAssertNotNil(vc.view, "Problem initializing view")
         vc.viewDidLoad()
         let cell = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 0, section: 0)) as! ProTableViewCell
-        XCTAssertNotNil(cell)
+        XCTAssertNotNil(cell, "Cell is nil")
     }
-
+    
+    func testSegueToDetailsVC() {
+        let detailsVCIdentifier = "proDetailsSegue"
+        let destination = ProDetailsViewController()
+        let segue = UIStoryboardSegue(identifier: detailsVCIdentifier, source: vc, destination: destination)
+        vc.prepare(for: segue, sender: vc)
+        XCTAssertNotNil(destination, "Destination view controller is nil")
+    }
 }

@@ -20,6 +20,7 @@
 		3ACA674921D7BC9C00AE99E5 /* Drew_Sullivan_HA_iOS_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA674821D7BC9C00AE99E5 /* Drew_Sullivan_HA_iOS_ProjectUITests.swift */; };
 		3ACA675321D7C77400AE99E5 /* ProStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA675221D7C77400AE99E5 /* ProStoreTests.swift */; };
 		3ACA675921D80BE100AE99E5 /* ProsTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA675821D80BE100AE99E5 /* ProsTableViewControllerTests.swift */; };
+		3AF2715A21D821AE00484268 /* ProDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2715921D821AE00484268 /* ProDetailsViewControllerTests.swift */; };
 		3AF57EAC21D66E75007A0771 /* ProTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF57EAB21D66E75007A0771 /* ProTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		3ACA674A21D7BC9C00AE99E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3ACA675221D7C77400AE99E5 /* ProStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProStoreTests.swift; sourceTree = "<group>"; };
 		3ACA675821D80BE100AE99E5 /* ProsTableViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProsTableViewControllerTests.swift; sourceTree = "<group>"; };
+		3AF2715921D821AE00484268 /* ProDetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProDetailsViewControllerTests.swift; sourceTree = "<group>"; };
 		3AF57EAB21D66E75007A0771 /* ProTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +131,7 @@
 				3ACA675221D7C77400AE99E5 /* ProStoreTests.swift */,
 				3A56508B21D517D400B764D3 /* ProTests.swift */,
 				3ACA675821D80BE100AE99E5 /* ProsTableViewControllerTests.swift */,
+				3AF2715921D821AE00484268 /* ProDetailsViewControllerTests.swift */,
 				3A56508D21D517D400B764D3 /* Info.plist */,
 			);
 			path = Drew_Sullivan_HA_iOS_ProjectTests;
@@ -334,6 +337,7 @@
 				3ACA675321D7C77400AE99E5 /* ProStoreTests.swift in Sources */,
 				3A56508C21D517D400B764D3 /* ProTests.swift in Sources */,
 				3ACA675921D80BE100AE99E5 /* ProsTableViewControllerTests.swift in Sources */,
+				3AF2715A21D821AE00484268 /* ProDetailsViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
