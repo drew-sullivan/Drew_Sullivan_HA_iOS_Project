@@ -6,7 +6,6 @@
 //  Copyright © 2018 Drew Sullivan. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 struct Pro: Decodable {

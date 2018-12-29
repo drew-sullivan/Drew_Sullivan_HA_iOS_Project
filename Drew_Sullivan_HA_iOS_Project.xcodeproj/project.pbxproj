@@ -12,13 +12,14 @@
 		3A56507E21D517D400B764D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A56507D21D517D400B764D3 /* Assets.xcassets */; };
 		3A56508121D517D400B764D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A56507F21D517D400B764D3 /* LaunchScreen.storyboard */; };
 		3A56508C21D517D400B764D3 /* ProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56508B21D517D400B764D3 /* ProTests.swift */; };
-		3A56509E21D51D9300B764D3 /* ProsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56509D21D51D9300B764D3 /* ProsViewController.swift */; };
+		3A56509E21D51D9300B764D3 /* ProsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56509D21D51D9300B764D3 /* ProsTableViewController.swift */; };
 		3A5650A021D51DF500B764D3 /* pro_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A56509F21D51DF400B764D3 /* pro_data.json */; };
 		3A5650A221D51E3A00B764D3 /* Pro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5650A121D51E3A00B764D3 /* Pro.swift */; };
 		3A5650A421D5324900B764D3 /* ProStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5650A321D5324900B764D3 /* ProStore.swift */; };
 		3A5650A821D56C4900B764D3 /* ProDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5650A721D56C4900B764D3 /* ProDetailsViewController.swift */; };
 		3ACA674921D7BC9C00AE99E5 /* Drew_Sullivan_HA_iOS_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA674821D7BC9C00AE99E5 /* Drew_Sullivan_HA_iOS_ProjectUITests.swift */; };
 		3ACA675321D7C77400AE99E5 /* ProStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA675221D7C77400AE99E5 /* ProStoreTests.swift */; };
+		3ACA675521D7F26F00AE99E5 /* ProsTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA675421D7F26F00AE99E5 /* ProsTableViewControllerTests.swift */; };
 		3AF57EAC21D66E75007A0771 /* ProTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF57EAB21D66E75007A0771 /* ProTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +50,7 @@
 		3A56508721D517D400B764D3 /* Drew_Sullivan_HA_iOS_ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Drew_Sullivan_HA_iOS_ProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A56508B21D517D400B764D3 /* ProTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProTests.swift; sourceTree = "<group>"; };
 		3A56508D21D517D400B764D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A56509D21D51D9300B764D3 /* ProsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProsViewController.swift; sourceTree = "<group>"; };
+		3A56509D21D51D9300B764D3 /* ProsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProsTableViewController.swift; sourceTree = "<group>"; };
 		3A56509F21D51DF400B764D3 /* pro_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pro_data.json; sourceTree = "<group>"; };
 		3A5650A121D51E3A00B764D3 /* Pro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro.swift; sourceTree = "<group>"; };
 		3A5650A321D5324900B764D3 /* ProStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProStore.swift; sourceTree = "<group>"; };
@@ -58,6 +59,7 @@
 		3ACA674821D7BC9C00AE99E5 /* Drew_Sullivan_HA_iOS_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drew_Sullivan_HA_iOS_ProjectUITests.swift; sourceTree = "<group>"; };
 		3ACA674A21D7BC9C00AE99E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3ACA675221D7C77400AE99E5 /* ProStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProStoreTests.swift; sourceTree = "<group>"; };
+		3ACA675421D7F26F00AE99E5 /* ProsTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProsTableViewControllerTests.swift; sourceTree = "<group>"; };
 		3AF57EAB21D66E75007A0771 /* ProTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +128,7 @@
 			children = (
 				3ACA675221D7C77400AE99E5 /* ProStoreTests.swift */,
 				3A56508B21D517D400B764D3 /* ProTests.swift */,
+				3ACA675421D7F26F00AE99E5 /* ProsTableViewControllerTests.swift */,
 				3A56508D21D517D400B764D3 /* Info.plist */,
 			);
 			path = Drew_Sullivan_HA_iOS_ProjectTests;
@@ -144,7 +147,7 @@
 			children = (
 				3A78B64521D5BC93006749E7 /* Cells */,
 				3A5650A721D56C4900B764D3 /* ProDetailsViewController.swift */,
-				3A56509D21D51D9300B764D3 /* ProsViewController.swift */,
+				3A56509D21D51D9300B764D3 /* ProsTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -318,7 +321,7 @@
 				3A5650A221D51E3A00B764D3 /* Pro.swift in Sources */,
 				3AF57EAC21D66E75007A0771 /* ProTableViewCell.swift in Sources */,
 				3A5650A821D56C4900B764D3 /* ProDetailsViewController.swift in Sources */,
-				3A56509E21D51D9300B764D3 /* ProsViewController.swift in Sources */,
+				3A56509E21D51D9300B764D3 /* ProsTableViewController.swift in Sources */,
 				3A56507721D517D300B764D3 /* AppDelegate.swift in Sources */,
 				3A5650A421D5324900B764D3 /* ProStore.swift in Sources */,
 			);
@@ -330,6 +333,7 @@
 			files = (
 				3ACA675321D7C77400AE99E5 /* ProStoreTests.swift in Sources */,
 				3A56508C21D517D400B764D3 /* ProTests.swift in Sources */,
+				3ACA675521D7F26F00AE99E5 /* ProsTableViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
