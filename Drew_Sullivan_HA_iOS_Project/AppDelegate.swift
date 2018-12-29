@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let proStore = ProStore()
         
         let navController = window!.rootViewController as! UINavigationController
-        let prosViewController = navController.topViewController as! ProsViewController
+        let prosViewController = navController.topViewController as! ProsTableViewController
         prosViewController.proStore = proStore
         return true
     }

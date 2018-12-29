@@ -19,7 +19,7 @@
 		3A5650A821D56C4900B764D3 /* ProDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5650A721D56C4900B764D3 /* ProDetailsViewController.swift */; };
 		3ACA674921D7BC9C00AE99E5 /* Drew_Sullivan_HA_iOS_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA674821D7BC9C00AE99E5 /* Drew_Sullivan_HA_iOS_ProjectUITests.swift */; };
 		3ACA675321D7C77400AE99E5 /* ProStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA675221D7C77400AE99E5 /* ProStoreTests.swift */; };
-		3ACA675521D7F26F00AE99E5 /* ProsTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA675421D7F26F00AE99E5 /* ProsTableViewControllerTests.swift */; };
+		3ACA675921D80BE100AE99E5 /* ProsTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA675821D80BE100AE99E5 /* ProsTableViewControllerTests.swift */; };
 		3AF57EAC21D66E75007A0771 /* ProTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF57EAB21D66E75007A0771 /* ProTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +59,7 @@
 		3ACA674821D7BC9C00AE99E5 /* Drew_Sullivan_HA_iOS_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drew_Sullivan_HA_iOS_ProjectUITests.swift; sourceTree = "<group>"; };
 		3ACA674A21D7BC9C00AE99E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3ACA675221D7C77400AE99E5 /* ProStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProStoreTests.swift; sourceTree = "<group>"; };
-		3ACA675421D7F26F00AE99E5 /* ProsTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProsTableViewControllerTests.swift; sourceTree = "<group>"; };
+		3ACA675821D80BE100AE99E5 /* ProsTableViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProsTableViewControllerTests.swift; sourceTree = "<group>"; };
 		3AF57EAB21D66E75007A0771 /* ProTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,7 +128,7 @@
 			children = (
 				3ACA675221D7C77400AE99E5 /* ProStoreTests.swift */,
 				3A56508B21D517D400B764D3 /* ProTests.swift */,
-				3ACA675421D7F26F00AE99E5 /* ProsTableViewControllerTests.swift */,
+				3ACA675821D80BE100AE99E5 /* ProsTableViewControllerTests.swift */,
 				3A56508D21D517D400B764D3 /* Info.plist */,
 			);
 			path = Drew_Sullivan_HA_iOS_ProjectTests;
@@ -171,8 +171,8 @@
 		3A78B64721D5BD11006749E7 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				3A56507F21D517D400B764D3 /* LaunchScreen.storyboard */,
 				3A56507A21D517D300B764D3 /* Main.storyboard */,
+				3A56507F21D517D400B764D3 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -333,7 +333,7 @@
 			files = (
 				3ACA675321D7C77400AE99E5 /* ProStoreTests.swift in Sources */,
 				3A56508C21D517D400B764D3 /* ProTests.swift in Sources */,
-				3ACA675521D7F26F00AE99E5 /* ProsTableViewControllerTests.swift in Sources */,
+				3ACA675921D80BE100AE99E5 /* ProsTableViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

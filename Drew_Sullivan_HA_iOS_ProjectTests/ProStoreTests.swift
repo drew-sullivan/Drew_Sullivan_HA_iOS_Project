@@ -12,7 +12,7 @@ import XCTest
 
 class ProStoreTests: XCTestCase {
     
-    var proStore: ProStore?
+    var proStore: ProStore!
 
     override func setUp() {
         super.setUp()
@@ -27,9 +27,7 @@ class ProStoreTests: XCTestCase {
     }
 
     func testProStorePopulatedWithProObjects() {
-        if let ps = proStore {
-            XCTAssert(ps.pros.count > 0, "ProStore not populated")
-        }
+        XCTAssert(proStore.pros.count > 0, "ProStore not populated")
     }
 
 }

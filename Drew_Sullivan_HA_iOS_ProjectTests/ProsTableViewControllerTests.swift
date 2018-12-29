@@ -8,26 +8,38 @@
 
 import XCTest
 
+@testable import Drew_Sullivan_HA_iOS_Project
+
 class ProsTableViewControllerTests: XCTestCase {
 
+    let storyboardName = "Main"
+    let vcIdentifier = "prosTableViewController"
+    var vc: ProsTableViewController!
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        
+        let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
+        vc = storyboard.instantiateViewController(withIdentifier: vcIdentifier) as? ProsTableViewController
+        let proStore = ProStore()
+        vc.proStore = proStore
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        vc.proStore = nil
+        
+        super.tearDown()
+    }
+    
+    func testNumberOfRowsInSection() {
+        XCTAssert(vc.proStore.pros.count == vc.tableView(vc.tableView, numberOfRowsInSection: 0), "Number of rows in ProStore does not match number or rows in TableView")
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testCellForRowAt() {
+        XCTAssertNotNil(vc.view, "Problem initializing view")
+        vc.viewDidLoad()
+        let cell = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 0, section: 0)) as! ProTableViewCell
+        XCTAssertNotNil(cell)
     }
 
 }

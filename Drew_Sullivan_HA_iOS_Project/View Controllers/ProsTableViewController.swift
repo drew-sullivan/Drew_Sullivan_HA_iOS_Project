@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProsViewController: UITableViewController {
+class ProsTableViewController: UITableViewController {
     
     var proStore: ProStore!
     

@@ -13,7 +13,7 @@
         <!--Pros-->
         <scene sceneID="RHh-yc-Uch">
             <objects>
-                <tableViewController id="5UZ-nt-VEC" customClass="ProsViewController" customModule="Drew_Sullivan_HA_iOS_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="prosTableViewController" id="5UZ-nt-VEC" customClass="ProsTableViewController" customModule="Drew_Sullivan_HA_iOS_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fHN-DQ-EVs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,7 +70,7 @@
         <!--Details-->
         <scene sceneID="arm-Mc-nk8">
             <objects>
-                <viewController title="Details" id="wmy-So-cef" customClass="ProDetailsViewController" customModule="Drew_Sullivan_HA_iOS_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="proDetailsViewController" title="Details" id="wmy-So-cef" customClass="ProDetailsViewController" customModule="Drew_Sullivan_HA_iOS_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mgc-g6-UGO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
