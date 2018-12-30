@@ -9,26 +9,40 @@
 import XCTest
 
 class Drew_Sullivan_HA_iOS_ProjectUITests: XCTestCase {
+    
+    let tableName = "prosTable"
+    var app: XCUIApplication!
+    var table: XCUIElement!
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        app = XCUIApplication()
+        table = app.tables[tableName]
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+        table = nil
+        app = nil
 
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        super.tearDown()
+    }
+    
+    func testRowClickToDetailView() {
+        table.cells/*@START_MENU_TOKEN@*/.staticTexts["AAA Service Plumbing, Inc."]/*[[".cells.staticTexts[\"AAA Service Plumbing, Inc.\"]",".staticTexts[\"AAA Service Plumbing, Inc.\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["Details"].buttons["Pros"].tap()
+    }
+    
+    func testCallButtonTap() {
+        table.cells/*@START_MENU_TOKEN@*/.staticTexts["AAA Service Plumbing, Inc."]/*[[".cells.staticTexts[\"AAA Service Plumbing, Inc.\"]",".staticTexts[\"AAA Service Plumbing, Inc.\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.buttons["CALL"].tap()
+        app.navigationBars["Details"].buttons["Pros"].tap()
+    }
+    
+    func testEmailButtonTap() {
+        table.cells/*@START_MENU_TOKEN@*/.staticTexts["AAA Service Plumbing, Inc."]/*[[".cells.staticTexts[\"AAA Service Plumbing, Inc.\"]",".staticTexts[\"AAA Service Plumbing, Inc.\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.buttons["EMAIL"].tap()
+        app.navigationBars["Details"].buttons["Pros"].tap()
     }
 
 }

@@ -56,6 +56,9 @@
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityLabel" value="prosTable"/>
+                        </userDefinedRuntimeAttributes>
                         <connections>
                             <outlet property="dataSource" destination="5UZ-nt-VEC" id="f5T-wB-tSH"/>
                             <outlet property="delegate" destination="5UZ-nt-VEC" id="ZHz-Eh-EoZ"/>
