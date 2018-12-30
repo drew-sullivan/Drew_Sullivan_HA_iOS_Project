@@ -10,14 +10,14 @@ import UIKit
 
 class ProDetailsViewController: UIViewController {
     
-    @IBOutlet var proNameLabel: UILabel!
-    @IBOutlet var specialtyLabel: UILabel!
-    @IBOutlet var ratingInformationLabel: UILabel!
-    @IBOutlet var locationLabel: UILabel!
-    @IBOutlet var servicesLabel: UILabel!
-    @IBOutlet var overviewTextView: UITextView!
-    @IBOutlet var callButton: UIButton!
-    @IBOutlet var emailButton: UIButton!
+    @IBOutlet private var proNameLabel: UILabel!
+    @IBOutlet private var specialtyLabel: UILabel!
+    @IBOutlet private var ratingInformationLabel: UILabel!
+    @IBOutlet private var locationLabel: UILabel!
+    @IBOutlet private var servicesLabel: UILabel!
+    @IBOutlet private var overviewTextView: UITextView!
+    @IBOutlet private var callButton: UIButton!
+    @IBOutlet private var emailButton: UIButton!
     
     var pro: Pro!
     
@@ -34,10 +34,10 @@ class ProDetailsViewController: UIViewController {
     }
     
     // MARK: - IBActions
-    @IBAction func callButtonTapped(_ sender: UIButton) {
+    @IBAction private func callButtonTapped(_ sender: UIButton) {
         print("phone = \(pro.phoneNumber)")
     }
-    @IBAction func emailButtonTapped(_ sender: UIButton) {
+    @IBAction private func emailButtonTapped(_ sender: UIButton) {
         print("email = \(pro.email)")
     }
 }
