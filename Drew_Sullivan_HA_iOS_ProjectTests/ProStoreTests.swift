@@ -27,7 +27,9 @@ class ProStoreTests: XCTestCase {
     }
 
     func testProStorePopulatedWithProObjects() {
-        XCTAssert(proStore.pros.count > 0, "ProStore not populated")
+        XCTAssert(proStore.numPros > 0, "ProStore not populated")
     }
+    
+    
 
 }

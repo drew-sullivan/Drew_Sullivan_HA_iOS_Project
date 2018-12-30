@@ -22,12 +22,12 @@ class ProsTableViewController: UITableViewController {
     
     // MARK: - TableView
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return proStore.pros.count
+        return proStore.numPros()
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProTableViewCell", for: indexPath) as! ProTableViewCell
-        let pro = proStore.pros[indexPath.row]
+        let pro = proStore.pro(forIndex: indexPath.row)
         
         cell.proNameLabel.text = pro.companyName
         cell.ratingInfoLabel.text = pro.ratingInformation
@@ -41,7 +41,7 @@ class ProsTableViewController: UITableViewController {
         switch segue.identifier {
         case "proDetailsSegue":
             if let row = tableView.indexPathForSelectedRow?.row {
-                let pro = proStore.pros[row]
+                let pro = proStore.pro(forIndex: row)
                 let proDetailsViewController = segue.destination as! ProDetailsViewController
                 proDetailsViewController.pro = pro
             }
@@ -49,5 +49,4 @@ class ProsTableViewController: UITableViewController {
             return
         }
     }
-    
 }

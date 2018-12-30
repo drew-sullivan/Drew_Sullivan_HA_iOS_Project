@@ -8,12 +8,26 @@
 
 import UIKit
 
-class ProStore {
-    var pros = [Pro]()
+public class ProStore {
     
-    init() {
+    private var pros = [Pro]()
+    
+    private init() {
         readJSONFile(fileName: "pro_data", fileExtension: "json")
         pros = pros.sorted { $0.companyName < $1.companyName }
+    }
+    
+    public static let shared: ProStore = {
+        let instance = ProStore()
+        return instance
+    }()
+    
+    public func pro(forIndex index: Int) -> Pro {
+        return pros[index]
+    }
+    
+    public func numPros() -> Int {
+        return pros.count
     }
     
     private func readJSONFile(fileName res: String, fileExtension ext: String) {

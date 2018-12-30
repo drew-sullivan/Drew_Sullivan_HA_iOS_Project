@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct Pro: Decodable {
+public struct Pro: Decodable {
     var entityId: String
     var companyName: String
     var ratingCount: String

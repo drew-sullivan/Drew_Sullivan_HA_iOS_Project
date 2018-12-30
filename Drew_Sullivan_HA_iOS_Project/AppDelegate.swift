@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let proStore = ProStore()
+        let proStore = ProStore.shared
         
         let navController = window!.rootViewController as! UINavigationController
         let prosViewController = navController.topViewController as! ProsTableViewController
