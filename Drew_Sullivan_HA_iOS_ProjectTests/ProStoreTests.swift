@@ -17,7 +17,7 @@ class ProStoreTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        proStore = ProStore()
+        proStore = ProStore.shared
     }
 
     override func tearDown() {
@@ -25,11 +25,8 @@ class ProStoreTests: XCTestCase {
         
         super.tearDown()
     }
-
-    func testProStorePopulatedWithProObjects() {
-        XCTAssert(proStore.numPros > 0, "ProStore not populated")
+    
+    func testNumPros() {
+        XCTAssert(proStore.numPros > 0, "ProStore not set")
     }
-    
-    
-
 }

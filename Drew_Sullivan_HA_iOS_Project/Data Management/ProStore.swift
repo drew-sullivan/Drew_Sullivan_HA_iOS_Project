@@ -22,12 +22,12 @@ public class ProStore {
         return instance
     }()
     
-    public func pro(forIndex index: Int) -> Pro {
-        return pros[index]
+    public var numPros: Int {
+        return pros.count
     }
     
-    public func numPros() -> Int {
-        return pros.count
+    public func pro(forIndex index: Int) -> Pro {
+        return pros[index]
     }
     
     private func readJSONFile(fileName res: String, fileExtension ext: String) {

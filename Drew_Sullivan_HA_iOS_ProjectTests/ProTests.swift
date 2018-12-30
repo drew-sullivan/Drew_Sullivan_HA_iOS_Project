@@ -17,8 +17,8 @@ class Drew_Sullivan_HA_iOS_ProjectTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        let proStore = ProStore()
-        pro = proStore.pros[0]
+        let proStore = ProStore.shared
+        pro = proStore.pro(forIndex: 0)
     }
 
     override func tearDown() {

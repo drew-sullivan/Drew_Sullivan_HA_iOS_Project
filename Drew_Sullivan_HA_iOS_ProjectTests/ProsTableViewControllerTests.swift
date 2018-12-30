@@ -22,7 +22,7 @@ class ProsTableViewControllerTests: XCTestCase {
         
         let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
         vc = storyboard.instantiateViewController(withIdentifier: vcIdentifier) as? ProsTableViewController
-        let proStore = ProStore()
+        let proStore = ProStore.shared
         vc.proStore = proStore
     }
 
@@ -33,7 +33,8 @@ class ProsTableViewControllerTests: XCTestCase {
     }
     
     func testNumberOfRowsInSection() {
-        XCTAssert(vc.proStore.pros.count == vc.tableView(vc.tableView, numberOfRowsInSection: 0), "Number of rows in ProStore does not match number or rows in TableView")
+        let numPros = vc.proStore.numPros
+        XCTAssert(numPros == vc.tableView(vc.tableView, numberOfRowsInSection: 0), "Number of rows in ProStore does not match number or rows in TableView")
     }
 
     func testCellForRowAt() {
