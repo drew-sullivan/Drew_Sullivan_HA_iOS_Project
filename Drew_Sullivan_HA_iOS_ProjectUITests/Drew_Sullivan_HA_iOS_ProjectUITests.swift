@@ -15,6 +15,8 @@ class Drew_Sullivan_HA_iOS_ProjectUITests: XCTestCase {
     var table: XCUIElement!
 
     override func setUp() {
+        super.setUp()
+        
         continueAfterFailure = false
         XCUIApplication().launch()
         app = XCUIApplication()
